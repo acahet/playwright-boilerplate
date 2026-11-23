@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     container:
-      image: mcr.microsoft.com/playwright:v1.65.0-noble
+      image: mcr.microsoft.com/playwright:v1.65.1-noble
       # Run as the runner's user, as the Playwright docs recommend: Firefox refuses to start as root
       # with the HOME GitHub sets, and overriding HOME made the docker client warn on every step.
       options: --user 1001
